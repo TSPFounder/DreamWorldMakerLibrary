@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61F23A2B-D45A-4D3F-97E7-B852F42911C3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DreamWorldMakerLibrary</RootNamespace>
+    <AssemblyName>DreamWorldMakerLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aileron.cs" />
+    <Compile Include="Aircraft.cs" />
+    <Compile Include="Airfoil.cs" />
+    <Compile Include="Airframe.cs" />
+    <Compile Include="Antenna.cs" />
+    <Compile Include="AppFile.cs" />
+    <Compile Include="ApplicationAddOn.cs" />
+    <Compile Include="ApplicationClass.cs" />
+    <Compile Include="ApplicationManager.cs" />
+    <Compile Include="ApplicationProgrammingInterface.cs" />
+    <Compile Include="AsIsOperationalDomain.cs" />
+    <Compile Include="AtomicElement.cs" />
+    <Compile Include="Automobile.cs" />
+    <Compile Include="AzureDevopsApp.cs" />
+    <Compile Include="Barometer.cs" />
+    <Compile Include="Battery.cs" />
+    <Compile Include="BatteryManagementSystem.cs" />
+    <Compile Include="Beam.cs" />
+    <Compile Include="Bearing.cs" />
+    <Compile Include="BlockDefinitionDiagram.cs" />
+    <Compile Include="Boom.cs" />
+    <Compile Include="Bracket.cs" />
+    <Compile Include="Brake.cs" />
+    <Compile Include="CAD_App.cs" />
+    <Compile Include="CAD_Assembly.cs" />
+    <Compile Include="CAD_Body.cs" />
+    <Compile Include="CAD_BoM.cs" />
+    <Compile Include="CAD_ChangeOrder.cs" />
+    <Compile Include="CAD_ChangeRequest.cs" />
+    <Compile Include="CAD_Component.cs" />
+    <Compile Include="CAD_Configuration.cs" />
+    <Compile Include="CAD_Constraint.cs" />
+    <Compile Include="CAD_ConstructionGeometery.cs" />
+    <Compile Include="CAD_DesignTable.cs" />
+    <Compile Include="CAD_Dimension.cs" />
+    <Compile Include="CAD_Drawing.cs" />
+    <Compile Include="CAD_DrawingElement.cs" />
+    <Compile Include="CAD_DrawingNote.cs" />
+    <Compile Include="CAD_DrawingPMI.cs" />
+    <Compile Include="CAD_DrawingSheet.cs" />
+    <Compile Include="CAD_DrawingTable.cs" />
+    <Compile Include="CAD_DrawingTableCell.cs" />
+    <Compile Include="CAD_DrawingView.cs" />
+    <Compile Include="CAD_Feature.cs" />
+    <Compile Include="CAD_Hole.cs" />
+    <Compile Include="CAD_Interface.cs" />
+    <Compile Include="CAD_Joint.cs" />
+    <Compile Include="CAD_Layout.cs" />
+    <Compile Include="CAD_Library.cs" />
+    <Compile Include="CAD_Manager.cs" />
+    <Compile Include="CAD_Model.cs" />
+    <Compile Include="CAD_ModelConfiguration.cs" />
+    <Compile Include="CAD_Parameter.cs" />
+    <Compile Include="CAD_Part.cs" />
+    <Compile Include="CAD_Sketch.cs" />
+    <Compile Include="CAD_SketchPlane.cs" />
+    <Compile Include="CAD_Station.cs" />
+    <Compile Include="CAD_Surface.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Cone.cs" />
+    <Compile Include="ConfigurationItem.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="CoordinateSystem.cs" />
+    <Compile Include="Cylinder.cs" />
+    <Compile Include="EngineeringNotebook.cs" />
+    <Compile Include="Equation.cs" />
+    <Compile Include="Expression.cs" />
+    <Compile Include="FamilyOfSystems.cs" />
+    <Compile Include="FlightControl.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="MeasureOfEffectiveness.cs" />
+    <Compile Include="MeasureOfPerformance.cs" />
+    <Compile Include="Mesh.cs" />
+    <Compile Include="MeshElement.cs" />
+    <Compile Include="Mission.cs" />
+    <Compile Include="MissionElement.cs" />
+    <Compile Include="MissionGoal.cs" />
+    <Compile Include="MissionRequirement.cs" />
+    <Compile Include="MissionScenario.cs" />
+    <Compile Include="MissionScene.cs" />
+    <Compile Include="MissionStage.cs" />
+    <Compile Include="NeedsStatement.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Plant.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Primitive.cs" />
+    <Compile Include="Prism.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DWM_Stakeholder.cs" />
+    <Compile Include="DWM_Project.cs" />
+    <Compile Include="DWM_Component.cs" />
+    <Compile Include="DWM_Design.cs" />
+    <Compile Include="DWM_System.cs" />
+    <Compile Include="DWM_SystemModel.cs" />
+    <Compile Include="Quadrilateral.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="ScenarioDesigner.cs" />
+    <Compile Include="Segment.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="SensorGroup.cs" />
+    <Compile Include="SensorSubsystem.cs" />
+    <Compile Include="SimscapeModel.cs" />
+    <Compile Include="SimulationModel.cs" />
+    <Compile Include="SimulinkModel.cs" />
+    <Compile Include="Sphere.cs" />
+    <Compile Include="DWM_Requirement.cs" />
+    <Compile Include="DWM_Analysis.cs" />
+    <Compile Include="DWM_Demo.cs" />
+    <Compile Include="DWM_Document.cs" />
+    <Compile Include="DWM_Epic.cs" />
+    <Compile Include="DWM_Feature.cs" />
+    <Compile Include="DWM_Inspection.cs" />
+    <Compile Include="DWM_Plan.cs" />
+    <Compile Include="DWM_Report.cs" />
+    <Compile Include="DWM_Risk.cs" />
+    <Compile Include="DWM_Task.cs" />
+    <Compile Include="DWM_Test.cs" />
+    <Compile Include="DWM_Verification.cs" />
+    <Compile Include="DWM_WorkItem.cs" />
+    <Compile Include="DWM_DesignDescription.cs" />
+    <Compile Include="DWM_Diagram.cs" />
+    <Compile Include="DWM_Figure.cs" />
+    <Compile Include="DWM_Table.cs" />
+    <Compile Include="DWM_TableCell.cs" />
+    <Compile Include="DWM_TableColumn.cs" />
+    <Compile Include="DWM_TableRow.cs" />
+    <Compile Include="DWM_Image.cs" />
+    <Compile Include="DWM_TestCase.cs" />
+    <Compile Include="DWM_TestStep.cs" />
+    <Compile Include="SubSystem.cs" />
+    <Compile Include="Surface.cs" />
+    <Compile Include="SystemOfInterest.cs" />
+    <Compile Include="SystemOfSystems.cs" />
+    <Compile Include="SystemRequirement.cs" />
+    <Compile Include="Tetrahedron.cs" />
+    <Compile Include="ThreeDGeometry.cs" />
+    <Compile Include="Torus.cs" />
+    <Compile Include="TwoDGeometry.cs" />
+    <Compile Include="UseCase.cs" />
+    <Compile Include="Vector.cs" />
+    <Compile Include="View.cs" />
+    <Compile Include="ViewPoint.cs" />
+    <Compile Include="WorkBreakdownStructure.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Accessibility">
+      <Guid>{1EA4DBF0-3C3B-11CF-810C-00AA00389B71}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.MSProject">
+      <Guid>{A7107640-94DF-1068-855E-00DD01075445}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.OutlookViewCtl">
+      <Guid>{0006F062-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.PowerPoint">
+      <Guid>{91493440-5A91-11CF-8700-00AA0060263B}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>12</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Visio">
+      <Guid>{00021A98-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>16</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MLApp">
+      <Guid>{C36E46AB-6A81-457B-9F91-A7719A06287F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
